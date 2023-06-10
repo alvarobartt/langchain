@@ -162,8 +162,6 @@ make docker_tests
 
 If you add new logic, please add a unit test.
 
-
-
 #### Integration Tests
 
 Integration tests cover logic that requires making calls to outside APIs (often integration with other services).
@@ -188,7 +186,7 @@ If you add support for a new external API, please add a new integration test.
 
 If you are adding a Jupyter notebook example, you'll want to install the optional `dev` dependencies.
 
-To install dev dependencies:
+To install the `dev` dependencies:
 
 ```bash
 poetry install --with dev
@@ -214,7 +212,13 @@ Similar to linting, we recognize documentation can be annoying. If you do not wa
 
 ### Build Documentation Locally
 
-Before building the documentation, it is always a good idea to clean the build directory:
+To install the `docs` dependencies:
+
+```bash
+poetry install --with docs
+```
+
+Additionally, before building the documentation, it is always a good idea to clean the build directory:
 
 ```bash
 make docs_clean
